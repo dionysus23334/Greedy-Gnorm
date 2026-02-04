@@ -1,7 +1,5 @@
 # Greedy-Gnorm: A Gradient Matrix Norm-Based Alternative to Attention Entropy for Head Pruning
-
 ## Table of Contents
-
 [Getting Started](#getting-started)  
 &nbsp;&nbsp;↳ [Environment Setup](#environment-setup)  
 &nbsp;&nbsp;↳ [CPU / GPU Execution](#cpu--gpu-execution)
@@ -23,12 +21,7 @@
 [Figures and Visualizations](#figures-and-visualizations)  
 &nbsp;&nbsp;↳ [Illustrative Figures](#illustrative-figures-manuscript-diagrams)  
 &nbsp;&nbsp;↳ [Experimental Result Visualizations](#experimental-result-visualizations)
-
 ---
-
-
-
-
 
 ## Getting Started
 
