@@ -1,3 +1,5 @@
+#Greedy-Gnorm: A Gradient Matrix Norm-Based Alternative to Attention Entropy for Head Pruning
+
 ## Getting Started
 
 All experiments are implemented in Jupyter notebooks (`.ipynb`).
