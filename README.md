@@ -147,8 +147,10 @@ Each CSV file records downstream task accuracy as a function of the number of pr
 
 #### `InverseGreedyGnormPruning.ipynb`
 
-**Purpose**
-Apply inverse greedy pruning based on G-norm criteria.
+#### `InverseGreedyGnormPruning.ipynb` — Inverse Greedy G-norm Pruning
+
+This notebook implements **inverse greedy gradient-norm–based attention head pruning** for Transformer models, where attention heads with **larger G-norm scores are pruned first**.
+Evaluate inverse greedy pruning behavior based on gradient-norm criteria and analyze worst-case pruning trajectories.
 
 **Usage**
 
@@ -156,10 +158,15 @@ Apply inverse greedy pruning based on G-norm criteria.
 Open and run all cells in the notebook.
 ```
 
-**Outputs**
+**Results**
 
-* Accuracy under inverse pruning
-* Final pruning configurations
+* `pruned_heads_accuracy(BERT)basedonInverseGreedyGnorm.csv`
+* `pruned_heads_accuracy(ALBERT)basedonInverseGreedyGnorm.csv`
+* `pruned_heads_accuracy(ROBERTA)basedonInverseGreedyGnorm.csv`
+* `pruned_heads_accuracy(XLM_ROBERTA)basedonInverseGreedyGnorm.csv`
+
+Each file records downstream accuracy as a function of the number of pruned attention heads under **inverse greedy G-norm–based pruning**.
+
 
 
 
