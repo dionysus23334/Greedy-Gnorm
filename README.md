@@ -331,11 +331,6 @@ This notebook visualizes and compares **attention head pruning behaviors** under
 * `allfinalsolutions.png` / `allfinalsolutions.pdf`
 * `gradientpooling.png` / `gradientpooling.pdf`
 
-> **Note**
-> Due to differences between notebook export behavior and repository organization, the output filenames generated in the notebook may not exactly match the figure filenames stored in the GitHub repository.
-> All figures referenced in this section are **content-equivalent**, and no differences exist in the underlying results or visualizations.
-
-
 
 
 ## Outputs
