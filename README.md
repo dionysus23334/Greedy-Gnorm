@@ -75,22 +75,9 @@ Unless noted otherwise, notebooks are expected to be run from the repository roo
 
 ### Data Preparation
 
-#### `data_processing.ipynb`
+#### `data_processing.ipynb` — Dataset Inspection
 
-**Purpose**
-Prepare datasets and model inputs for downstream pruning experiments.
-
-**Usage**
-
-```text
-Open and run all cells in the notebook.
-```
-
-**Outputs**
-
-* In-memory processed datasets
-* No files are written to disk
-
+This notebook is used to **quickly inspect the raw dataset format** before connecting it to model inputs.
 
 
 ### Gradient Analysis and Diagnostics
@@ -269,41 +256,15 @@ Open and run all cells in the notebook.
 
 
 
-#### `greedyprune(BERT,ALBERT,ROBERTA,XLM-ROBERTA).ipynb`
-
-**Purpose**
-Apply greedy G-norm pruning to multiple Transformer models in a unified setting.
-
-**Usage**
-
-```text
-Open and run all cells in the notebook.
-```
-
-**Outputs**
-
-* Consolidated pruning results across models
-* Comparative accuracy statistics
 
 
 
 ### Custom and Numerical Stability Experiments
 
-#### `customBERTpruning.ipynb`
+#### `customBERTpruning.ipynb` — Custom BERT Implementation Test
 
-**Purpose**
-Demonstrate customized pruning strategies for BERT models.
+This notebook experiments with a **manually implemented BERT architecture** and compares it against the official HuggingFace BERT model. Test whether a custom-written BERT implementation can correctly load pretrained weights and interface with existing pruning utilities.
 
-**Usage**
-
-```text
-Open and run all cells in the notebook.
-```
-
-**Outputs**
-
-* Accuracy metrics
-* Custom pruning masks
 
 
 
