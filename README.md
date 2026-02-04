@@ -351,12 +351,6 @@ This notebook visualizes and compares **attention head pruning behaviors** under
 * `AlbertPruning.png` / `AlbertPruning.pdf`
 * `allfinalsolutions.png` / `allfinalsolutions.pdf`
 * `gradientpooling.png` / `gradientpooling.pdf`
-好，这里只加一个
-
-**Note**
-The filenames of the generated figures may differ from those listed above due to local export settings or intermediate processing.
-However, the **visualized contents and experimental results are identical**, and the figures correspond exactly to the results described in this section.
-
 
 > **Note**
 > Due to different export configurations, the output filenames may vary across runs.
