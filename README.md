@@ -7,7 +7,7 @@
 [Reproducing Plots and Tables](#reproducing-plots-and-tables)  
 &nbsp;&nbsp;↳ [Data Preparation](#data-preparation)  
 &nbsp;&nbsp;↳ [Gradient Analysis and Diagnostics](#gradient-analysis-and-diagnostics)  
-&nbsp;&nbsp;↳ [Greedy Gnorm–Based Pruning](#greedy-gnormbased-pruning)  
+&nbsp;&nbsp;↳ [Greedy Gnorm Based Pruning](#greedy-gnorm-based-pruning)  
 &nbsp;&nbsp;↳ [Baseline and Comparative Pruning Methods](#baseline-and-comparative-pruning-methods)  
 &nbsp;&nbsp;↳ [Multi-Model Experiments](#multi-model-experiments)  
 &nbsp;&nbsp;↳ [Custom and Numerical Stability Experiments](#custom-and-numerical-stability-experiments)  
