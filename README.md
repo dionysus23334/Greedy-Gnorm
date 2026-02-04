@@ -95,23 +95,9 @@ Open and run all cells in the notebook.
 
 ### Gradient Analysis and Diagnostics
 
-#### `gradient_test.ipynb`
+#### `gradient_test.ipynb` — Gradient Behavior Analysis for Attention Head Pruning
 
-**Purpose**
-Validate gradient computation and inspect numerical stability for attention parameters.
-
-**Usage**
-
-```text
-Open and run all cells in the notebook.
-```
-
-**Outputs**
-
-* Printed diagnostic information
-* Gradient sanity-check results
-
-
+This notebook investigates the **gradient behavior of attention head parameters** in BERT during pruning, focusing on how **gradients change after individual heads are removed**.
 
 ### Greedy Gnorm Based Pruning
 
