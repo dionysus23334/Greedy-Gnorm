@@ -191,6 +191,9 @@ Open and run all cells in the notebook.
 
 
 
+
+
+
 #### `AE_inverse_pruning.ipynb` — Attention Entropy Inverse Pruning
 
 
@@ -205,7 +208,7 @@ Perform inverse pruning based on activation energy.
 Open and run all cells in the notebook.
 ```
 
-**Outputs**
+**Results**
 
 * `pruned_heads_accuracy(BERT)basedonAEinverse.csv`
 * `pruned_heads_accuracy(ALBERT)basedonAEinverse.csv`
@@ -213,6 +216,9 @@ Open and run all cells in the notebook.
 * `pruned_heads_accuracy(XLM_ROBERTA)basedonAEinverse.csv`
 
 Each file records downstream accuracy as a function of the number of pruned attention heads.
+
+
+
 
 
 ### Multi-Model Experiments
