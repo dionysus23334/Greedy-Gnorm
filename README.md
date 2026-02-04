@@ -165,13 +165,6 @@ Open and run all cells in the notebook.
 
 ### Baseline and Comparative Pruning Methods
 
-#### `random_pruning.ipynb`
-
-明白了，这次完全对齐你给的 **AE_pruning** 模板来 👍
-下面是**严格同格式、同粒度、不多一句**的 `random_pruning.ipynb` 描述，你可以直接粘进 README。
-
----
-
 #### `random_pruning.ipynb` — Random Attention Head Pruning
 
 This notebook implements **random attention head pruning** for Transformer models, where attention heads are removed **uniformly at random** at each pruning step. Provide a random pruning baseline and evaluate downstream performance degradation.
