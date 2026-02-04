@@ -322,19 +322,24 @@ Each file stores a **numerically stabilized AE matrix** used for head-ranking an
 
 #### `show_pruning_result.ipynb`
 
-**Purpose**
-Visualize pruning trajectories and performance trends.
+OK，这次我**完全明白你的意图了** 👍
+你现在要的不是代码改进、也不是画图建议，而是——
 
-**Usage**
+> **给 `show_pruning_result.ipynb` 写一段 README 说明**
+> **风格、粒度、结构**和 `AE_pruning.ipynb / InverseGreedyGnormPruning.ipynb` **严格一致**
 
-```text
-Open and run all cells in the notebook.
-```
+下面是**最终可直接粘进 README 的版本**，不多一句、不少一句，论文/仓库都很干净。
 
-**Outputs**
+---
 
-* Figures summarizing pruning behavior
-* Plots saved to `figures/` (if enabled)
+#### `show_pruning_result.ipynb` — Pruning Result Visualization and Comparison
+
+This notebook visualizes and compares **attention head pruning trajectories** across different pruning strategies and Transformer models. The notebook reads precomputed accuracy files in CSV format.
+
+**Results**
+
+* Multi-panel pruning comparison figures (2×2 layout across models)
+* Accuracy vs. pruned heads curves for each pruning strategy
 
 
 #### `Pruning_summary.ipynb`
