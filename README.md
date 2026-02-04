@@ -2,28 +2,34 @@
 
 ---
 
-## Contents
+---
 
-**Getting Started**
-- Environment setup
-- CPU / GPU execution
+## Table of Contents
 
-**Reproducing Plots and Tables**
-- Data preparation
-- Gradient analysis
-- Greedy G-norm pruning
-- Baseline and comparative methods
-- Multi-model experiments
-- Numerical stability analysis
-- Result aggregation and visualization
+[Getting Started](#getting-started)  
+&nbsp;&nbsp;↳ [Environment Setup](#environment-setup)  
+&nbsp;&nbsp;↳ [CPU / GPU Execution](#cpu--gpu-execution)
 
-**Outputs**
-- Random pruning baselines (Excel)
-- Accuracy vs. pruned heads (CSV)
+[Reproducing Plots and Tables](#reproducing-plots-and-tables)  
+&nbsp;&nbsp;↳ [Data Preparation](#data-preparation)  
+&nbsp;&nbsp;↳ [Gradient Analysis and Diagnostics](#gradient-analysis-and-diagnostics)  
+&nbsp;&nbsp;↳ [Greedy G-norm–Based Pruning](#greedy-g-normbased-pruning)  
+&nbsp;&nbsp;↳ [Baseline and Comparative Pruning Methods](#baseline-and-comparative-pruning-methods)  
+&nbsp;&nbsp;↳ [Multi-Model Experiments](#multi-model-experiments)  
+&nbsp;&nbsp;↳ [Custom and Numerical Stability Experiments](#custom-and-numerical-stability-experiments)  
+&nbsp;&nbsp;↳ [Result Aggregation and Visualization](#result-aggregation-and-visualization)
 
-**Figures and Visualizations**
-- Manuscript diagrams
-- Experimental results
+[Outputs](#outputs)  
+&nbsp;&nbsp;↳ [Random Pruning Results](#random-pruning-results-excel-files)  
+&nbsp;&nbsp;↳ [Accuracy vs. Pruned Heads](#accuracy-vs-pruned-heads-csv-files)  
+&nbsp;&nbsp;↳ [Notes on Reproducibility](#notes-on-reproducibility)
+
+[Figures and Visualizations](#figures-and-visualizations)  
+&nbsp;&nbsp;↳ [Illustrative Figures](#illustrative-figures-manuscript-diagrams)  
+&nbsp;&nbsp;↳ [Experimental Result Visualizations](#experimental-result-visualizations)
+
+---
+
 
 ---
 
