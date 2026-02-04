@@ -2,61 +2,28 @@
 
 ---
 
-## Table of Contents
+## Contents
 
-* [Getting Started](#getting-started)
+**Getting Started**
+- Environment setup
+- CPU / GPU execution
 
-  * [Environment Setup](#environment-setup)
-  * [CPU / GPU Execution](#cpu--gpu-execution)
+**Reproducing Plots and Tables**
+- Data preparation
+- Gradient analysis
+- Greedy G-norm pruning
+- Baseline and comparative methods
+- Multi-model experiments
+- Numerical stability analysis
+- Result aggregation and visualization
 
-    * [GPU Execution (Recommended)](#gpu-execution-recommended)
+**Outputs**
+- Random pruning baselines (Excel)
+- Accuracy vs. pruned heads (CSV)
 
-* [Reproducing Plots and Tables](#reproducing-plots-and-tables)
-
-  * [Data Preparation](#data-preparation)
-
-    * [`data_processing.ipynb`](#data_processingipynb)
-  * [Gradient Analysis and Diagnostics](#gradient-analysis-and-diagnostics)
-
-    * [`gradient_test.ipynb`](#gradient_testipynb)
-  * [Greedy G-norm–Based Pruning](#greedy-g-normbased-pruning)
-
-    * [`greedy_pruning.ipynb`](#greedy_pruningipynb)
-    * [`InverseGreedyGnormPruning.ipynb`](#inversegreedygnormpruningipynb)
-  * [Baseline and Comparative Pruning Methods](#baseline-and-comparative-pruning-methods)
-
-    * [`random_pruning.ipynb`](#random_pruningipynb)
-    * [`AE_pruning.ipynb`](#ae_pruningipynb)
-    * [`AE_inverse_pruning.ipynb`](#ae_inverse_pruningipynb)
-  * [Multi-Model Experiments](#multi-model-experiments)
-
-    * [`four_models.ipynb`](#four_modelsipynb)
-    * [`greedyprune(BERT,ALBERT,ROBERTA,XLM-ROBERTA).ipynb`](#greedyprunebertalbertrobertaxlm-robertaipynb)
-  * [Custom and Numerical Stability Experiments](#custom-and-numerical-stability-experiments)
-
-    * [`customBERTpruning.ipynb`](#custombertpruningipynb)
-    * [`solve_underflow.ipynb`](#solve_underflowipynb)
-  * [Result Aggregation and Visualization](#result-aggregation-and-visualization)
-
-    * [`show_pruning_result.ipynb`](#show_pruning_resultipynb)
-    * [`Pruning_summary.ipynb`](#pruning_summaryipynb)
-
-* [Outputs](#outputs)
-
-  * [Random Pruning Results (Excel Files)](#random-pruning-results-excel-files)
-  * [Accuracy vs. Pruned Heads (CSV Files)](#accuracy-vs-pruned-heads-csv-files)
-
-    * [ALBERT](#albert)
-    * [BERT](#bert)
-    * [RoBERTa](#roberta)
-    * [XLM-RoBERTa](#xlm-roberta)
-  * [Notes on Reproducibility](#notes-on-reproducibility)
-
-* [Figures and Visualizations](#figures-and-visualizations)
-
-  * [Illustrative Figures (Manuscript Diagrams)](#illustrative-figures-manuscript-diagrams)
-  * [Experimental Result Visualizations](#experimental-result-visualizations)
-  * [Notes on Reproducibility](#notes-on-reproducibility-1)
+**Figures and Visualizations**
+- Manuscript diagrams
+- Experimental results
 
 ---
 
