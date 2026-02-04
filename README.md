@@ -7,7 +7,7 @@
 [Reproducing Plots and Tables](#reproducing-plots-and-tables)  
 &nbsp;&nbsp;↳ [Data Preparation](#data-preparation)  
 &nbsp;&nbsp;↳ [Gradient Analysis and Diagnostics](#gradient-analysis-and-diagnostics)  
-&nbsp;&nbsp;↳ [Greedy G-norm–Based Pruning](#greedy-g-normbased-pruning)  
+&nbsp;&nbsp;↳ [Greedy Gnorm–Based Pruning](#greedy-gnormbased-pruning)  
 &nbsp;&nbsp;↳ [Baseline and Comparative Pruning Methods](#baseline-and-comparative-pruning-methods)  
 &nbsp;&nbsp;↳ [Multi-Model Experiments](#multi-model-experiments)  
 &nbsp;&nbsp;↳ [Custom and Numerical Stability Experiments](#custom-and-numerical-stability-experiments)  
@@ -245,9 +245,6 @@ This notebook experiments with a **manually implemented BERT architecture** and 
 
 
 
-
-#### `solve_underflow.ipynb`
-
 #### `solve_underflow.ipynb` — Attention Entropy Numerical Stability Diagnostics
 
 This notebook **diagnoses and fixes numerical underflow and NaN issues** arising during Attention Entropy (AE) computation from Transformer attention matrices. Detect NaN / Inf values during AE computation and generate numerically stable AE matrices for downstream pruning.
@@ -444,8 +441,8 @@ Each file corresponds to a specific:
 
   * Activation Energy (AE)
   * Inverse AE
-  * Greedy G-norm
-  * Inverse Greedy G-norm
+  * Greedy Gnorm
+  * Inverse Greedy Gnorm
 
 **Usage**
 
