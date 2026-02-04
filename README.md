@@ -256,10 +256,6 @@ This notebook experiments with a **manually implemented BERT architecture** and 
 
 #### `solve_underflow.ipynb`
 
-好，这个我按你**刚刚要求的统一格式**，只补充 **Results**，不多解释、不展开。
-
----
-
 #### `solve_underflow.ipynb` — Attention Entropy Numerical Stability Diagnostics
 
 This notebook **diagnoses and fixes numerical underflow and NaN issues** arising during Attention Entropy (AE) computation from Transformer attention matrices. Detect NaN / Inf values during AE computation and generate numerically stable AE matrices for downstream pruning.
