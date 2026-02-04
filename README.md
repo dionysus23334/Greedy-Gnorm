@@ -2,6 +2,15 @@
 
 ## Getting Started
 
+Clone this repository and change into the project directory:
+
+```bash
+
+git clone https://github.com/dionysus23334/Greedy-Gnorm.git
+cd Greedy-Gnorm
+
+```
+
 All experiments are implemented in Jupyter notebooks (`.ipynb`).
 
 We recommend using **Python 3.9+**.
