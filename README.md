@@ -115,25 +115,9 @@ Open and run all cells in the notebook.
 
 ### Greedy G-norm–Based Pruning
 
-#### `greedy_pruning.ipynb`
+#### `greedy_pruning.ipynb` — Greedy Gradient-Norm Pruning (Prototype)
 
-**Purpose**
-Perform greedy attention head pruning based on gradient matrix norms (G-norm).
-
-**Usage**
-
-```text
-Open and run all cells in the notebook.
-```
-
-**Outputs**
-
-* Accuracy after each pruning iteration
-* Pruned attention head masks
-* Optional figures visualizing pruning trajectories
-
-
-
+This notebook provides an **early exploratory implementation** of greedy attention head pruning based on **Q/K/V gradient norms**, primarily used for **method validation and debugging**, rather than final experimental reporting.
 
 
 #### `greedyprune(BERT,ALBERT,ROBERTA,XLM-ROBERTA).ipynb` — Greedy Gradient-Norm-Based Pruning
