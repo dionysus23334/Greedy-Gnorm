@@ -340,7 +340,30 @@ This notebook summarizes the **final pruning configurations** obtained from diff
 * Accuracy comparisons before and after pruning
 * Model structure summaries reporting parameter and memory reductions
 
----
+#### `greedy-gnorm-vis.ipynb` — Greedy Gnorm Pruning Visualization
+
+This notebook visualizes and compares **attention head pruning behaviors** under Greedy Gnorm–based and baseline pruning strategies. Visualize pruning trajectories, accuracy degradation patterns, and final pruning configurations across different Transformer models.
+
+**Results**
+
+* `PruningResults.png` / `PruningResults.pdf`
+* `RandomPruning.png` / `RandomPruning.pdf`
+* `AlbertPruning.png` / `AlbertPruning.pdf`
+* `allfinalsolutions.png` / `allfinalsolutions.pdf`
+* `gradientpooling.png` / `gradientpooling.pdf`
+好，这里只加一个
+
+**Note**
+The filenames of the generated figures may differ from those listed above due to local export settings or intermediate processing.
+However, the **visualized contents and experimental results are identical**, and the figures correspond exactly to the results described in this section.
+
+
+> **Note**
+> Due to different export configurations, the output filenames may vary across runs.
+> All figures referenced in this section are **content-equivalent**, and no differences exist in the underlying results or visualizations.
+
+
+
 
 ## Outputs
 
