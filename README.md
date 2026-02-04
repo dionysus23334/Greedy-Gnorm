@@ -238,25 +238,11 @@ Each file records downstream accuracy as a function of the number of pruned atte
 
 ### Multi-Model Experiments
 
-#### `four_models.ipynb`
-
-**Purpose**
-Evaluate pruning behavior across multiple Transformer architectures.
-
-**Usage**
-
-```text
-Open and run all cells in the notebook.
-```
-
-**Outputs**
-
-* Accuracy comparisons across models
-* Architecture-specific pruning results
 
 
+#### `four_models.ipynb` — Multi-Model Attention Head Pruning & Attention Entropy Analysis
 
-
+This notebook conducts **attention head and FFN pruning experiments** across four Transformer models (BERT, ALBERT, RoBERTa, XLM-RoBERTa) and **collects attention entropy (AE) statistics** from their attention matrices.
 
 
 ### Custom and Numerical Stability Experiments
@@ -270,19 +256,75 @@ This notebook experiments with a **manually implemented BERT architecture** and 
 
 #### `solve_underflow.ipynb`
 
-**Purpose**
-Investigate and mitigate numerical underflow issues encountered during pruning.
+好，这个我按你**刚刚要求的统一格式**，只补充 **Results**，不多解释、不展开。
 
-**Usage**
+---
 
-```text
-Open and run all cells in the notebook.
-```
+#### `solve_underflow.ipynb` — Attention Entropy Numerical Stability Diagnostics
 
-**Outputs**
+This notebook **diagnoses and fixes numerical underflow and NaN issues** arising during Attention Entropy (AE) computation from Transformer attention matrices. Detect NaN / Inf values during AE computation and generate numerically stable AE matrices for downstream pruning.
 
-* Diagnostic outputs
-* Numerical stability validation results
+**ALBERT**
+
+* `ALBERT0_499AE.pt`
+* `ALBERT500_999AE.pt`
+* `ALBERT1000_1499AE.pt`
+* `ALBERT1500_1999AE.pt`
+* `ALBERT2000_2499AE.pt`
+* `ALBERT2500_2999AE.pt`
+* `ALBERT3000_3499AE.pt`
+* `ALBERT3500_3999AE.pt`
+* `ALBERT4000_4499AE.pt`
+* `ALBERT4500_4999AE.pt`
+* `ALBERT5000_5499AE.pt`
+* `ALBERT5500_5999AE.pt`
+* `ALBERT6000_6499AE.pt`
+* `ALBERT6500_6999AE.pt`
+* `ALBERT7000_7499AE.pt`
+* `ALBERT7500_7999AE.pt`
+* `ALBERT8000_8499AE.pt`
+* `ALBERT8500_8999AE.pt`
+* `ALBERT9000_9499AE.pt`
+* `ALBERT9500_9814AE.pt`
+* `ALBERT_9815AE.pt`
+
+**BERT**
+
+* `BERT_1029AE.pt`
+* `BERT_1300AE.pt`
+* `BERT_2329AE.pt`
+
+**RoBERTa**
+
+* `ROBERTA0_499AE.pt`
+* `ROBERTA500_999AE.pt`
+* `ROBERTA1000_1499AE.pt`
+* `ROBERTA1500_1999AE.pt`
+* `ROBERTA2000_2499AE.pt`
+* `ROBERTA2500_2999AE.pt`
+* `ROBERTA3000_3499AE.pt`
+* `ROBERTA3500_3999AE.pt`
+* `ROBERTA4000_4499AE.pt`
+* `ROBERTA4500_4999AE.pt`
+* `ROBERTA5000_5204AE.pt`
+* `ROBERTA_5205AE.pt`
+
+**XLM-RoBERTa**
+
+* `XLM_ROBERTA0_999AE.pt`
+* `XLM_ROBERTA1000_1999AE.pt`
+* `XLM_ROBERTA2000_2999AE.pt`
+* `XLM_ROBERTA3000_3999AE.pt`
+* `XLM_ROBERTA4000_4999AE.pt`
+* `XLM_ROBERTA5000_5999AE.pt`
+* `XLM_ROBERTA6000_6999AE.pt`
+* `XLM_ROBERTA7000_7722AE.pt`
+* `XLM_ROBERTA7724_7999AE.pt`
+* `XLM_ROBERTA8000_8999AE.pt`
+* `XLM_ROBERTA9000_9999AE.pt`
+* `XLM_ROBERTA_9999AE.pt`
+
+Each file stores a **numerically stabilized AE matrix** used for head-ranking and pruning analysis.
 
 
 
