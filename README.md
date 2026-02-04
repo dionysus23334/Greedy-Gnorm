@@ -172,11 +172,13 @@ Open and run all cells in the notebook.
 
 
 
-#### `AE_pruning.ipynb`
+
+#### `AE_pruning.ipynb` — Attention Entropy Pruning
+
+This notebook implements **Attention Entropy (AE)–based attention head pruning** for Transformer models, where heads with higher AE scores are pruned first.
 
 **Purpose**
-Perform attention head pruning based on activation energy (AE).
-
+Perform AE-based greedy pruning and evaluate downstream performance degradation.
 
 **Usage**
 
@@ -184,12 +186,14 @@ Perform attention head pruning based on activation energy (AE).
 Open and run all cells in the notebook.
 ```
 
-**Outputs**
+**Results**
 
-* Accuracy after AE-based pruning
-* Pruning masks
+* `pruned_heads_accuracy(BERT)basedonAE.csv`
+* `pruned_heads_accuracy(ALBERT)basedonAE.csv`
+* `pruned_heads_accuracy(ROBERTA)basedonAE.csv`
+* `pruned_heads_accuracy(XLM_ROBERTA)basedonAE.csv`
 
-
+Each file records downstream accuracy as a function of the number of pruned attention heads.
 
 
 
