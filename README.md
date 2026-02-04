@@ -300,18 +300,107 @@ Open and run all cells in the notebook.
 
 ## Outputs
 
-The notebooks generate outputs corresponding to the experimental results reported in the manuscript, including:
-
-* Accuracy before and after attention head pruning
-* Pruning trajectories under different strategies
-* Comparative results across Transformer architectures
-* Diagnostic plots and summary figures
-
-Outputs are either displayed directly within the notebooks or saved to the following directories (if enabled):
-
-* `figures/`
-* `experiments_results/`
+This repository includes precomputed experimental results corresponding to the pruning experiments reported in the manuscript.
+These files allow reproducing plots and tables **without rerunning the full pruning procedure**, which can be computationally expensive.
 
 ---
+
+### Random Pruning Results (Excel Files)
+
+The following `.xlsx` files contain results from **random attention head pruning experiments**, used as baselines for comparison.
+
+**Files**
+
+* `ALBERTrandompruned_heads_data_25x13_1group.xlsx`
+* `BERTrandompruned_heads_data_50x25_1group.xlsx`
+* `BERTrandompruned_heads_data_50x25_2group.xlsx`
+* `BERTrandompruned_heads_data_50x25_concated.xlsx`
+* `ROBERTArandompruned_heads_data_25x25_1group.xlsx`
+* `XLM_ROBERTArandompruned_heads_data_25x25_1group.xlsx`
+
+**Description**
+
+* Each file records accuracy results under randomly selected attention head pruning.
+* Different files correspond to different model architectures and experimental groupings.
+* These results are used as **random pruning baselines** in comparative analyses.
+
+**Usage**
+
+* Loaded by analysis and visualization notebooks (e.g., `show_pruning_result.ipynb`)
+* Used to compute averaged baseline performance curves
+
+---
+
+### Accuracy vs. Pruned Heads (CSV Files)
+
+The following `.csv` files record **model accuracy as a function of the number of pruned attention heads**, under different pruning strategies.
+
+Each file corresponds to a specific:
+
+* Model architecture
+* Pruning criterion
+
+---
+
+#### ALBERT
+
+* `pruned_heads_accuracy(ALBERT)basedonAE.csv`
+* `pruned_heads_accuracy(ALBERT)basedonAEinverse.csv`
+* `pruned_heads_accuracy(ALBERT)basedonGreedyGnorm.csv`
+* `pruned_heads_accuracy(ALBERT)basedonInverseGreedyGnorm.csv`
+
+---
+
+#### BERT
+
+* `pruned_heads_accuracy(BERT)basedonAE.csv`
+* `pruned_heads_accuracy(BERT)basedonAEinverse.csv`
+* `pruned_heads_accuracy(BERT)basedonGreedyGnorm.csv`
+* `pruned_heads_accuracy(BERT)basedonInverseGreedyGnorm.csv`
+
+---
+
+#### RoBERTa
+
+* `pruned_heads_accuracy(ROBERTA)basedonAE.csv`
+* `pruned_heads_accuracy(ROBERTA)basedonAEinverse.csv`
+* `pruned_heads_accuracy(ROBERTA)basedonGreedyGnorm.csv`
+* `pruned_heads_accuracy(ROBERTA)basedonInverseGreedyGnorm.csv`
+
+---
+
+#### XLM-RoBERTa
+
+* `pruned_heads_accuracy(XLM_ROBERTA)basedonAE.csv`
+* `pruned_heads_accuracy(XLM_ROBERTA)basedonAEinverse.csv`
+* `pruned_heads_accuracy(XLM_ROBERTA)basedonGreedyGnorm.csv`
+* `pruned_heads_accuracy(XLM_ROBERTA)basedonInverseGreedyGnorm.csv`
+
+---
+
+**Description**
+
+* Each CSV file contains:
+
+  * Number of pruned attention heads
+  * Corresponding model accuracy
+* Files are organized by **pruning strategy**:
+
+  * Activation Energy (AE)
+  * Inverse AE
+  * Greedy G-norm
+  * Inverse Greedy G-norm
+
+**Usage**
+
+* Used to generate accuracy–pruning curves
+* Directly consumed by visualization and summary notebooks (e.g., `show_pruning_result.ipynb`, `Pruning_summary.ipynb`)
+
+---
+
+### Notes on Reproducibility
+
+* The provided result files allow reproducing figures and tables **without rerunning full pruning experiments**.
+* Full experiments can still be reproduced by executing the corresponding notebooks, but this may require substantial computation time, especially on CPU.
 
 
