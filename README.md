@@ -177,6 +177,7 @@ Open and run all cells in the notebook.
 **Purpose**
 Perform attention head pruning based on activation energy (AE).
 
+
 **Usage**
 
 ```text
@@ -190,7 +191,10 @@ Open and run all cells in the notebook.
 
 
 
-#### `AE_inverse_pruning.ipynb`
+#### `AE_inverse_pruning.ipynb` — Attention Entropy Inverse Pruning
+
+
+This notebook implements **inverse Attention Entropy (AE)–based attention head pruning** for Transformer models, where heads are removed in ascending order of their AE scores.
 
 **Purpose**
 Perform inverse pruning based on activation energy.
@@ -203,9 +207,12 @@ Open and run all cells in the notebook.
 
 **Outputs**
 
-* Accuracy under inverse AE pruning
-* Pruning configurations
+* `pruned_heads_accuracy(BERT)basedonAEinverse.csv`
+* `pruned_heads_accuracy(ALBERT)basedonAEinverse.csv`
+* `pruned_heads_accuracy(ROBERTA)basedonAEinverse.csv`
+* `pruned_heads_accuracy(XLM_ROBERTA)basedonAEinverse.csv`
 
+Each file records downstream accuracy as a function of the number of pruned attention heads.
 
 
 ### Multi-Model Experiments
