@@ -11,4 +11,6 @@ We recommend using **Python 3.9+**.
 ```bash
 conda create -n prune-test python=3.9 -y
 conda activate prune-test
+```
 
+Alternatively, core dependencies are listed in `requirements.txt`.
