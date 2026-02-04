@@ -134,6 +134,60 @@ Open and run all cells in the notebook.
 
 
 
+
+
+#### `greedyprune(BERT,ALBERT,ROBERTA,XLM-ROBERTA).ipynb` — Greedy Gradient-Norm-Based Pruning
+
+This notebook implements a **greedy attention head pruning algorithm based on gradient norm statistics**, where attention heads are iteratively removed according to their estimated contribution to the model output.
+
+**Purpose**
+Perform **greedy attention head pruning** using a **QKV gradient-norm–based importance score**, evaluated after each pruning step.
+
+**Method Overview**
+
+At each pruning iteration:
+
+1. Compute per-head gradient norms for **Query (Q), Key (K), and Value (V)** projection matrices.
+2. Aggregate head importance as the **product of Q, K, and V gradient norms**, followed by normalization.
+3. Select the **least important remaining attention head** in a greedy manner.
+4. Prune the selected head using a structured attention head mask.
+5. Re-evaluate downstream task accuracy after pruning.
+
+To correctly handle **previously pruned heads**, the implementation expands reduced-weight tensors back to the original dimensionality by inserting zero blocks, ensuring consistent per-head norm estimation throughout the pruning process.
+
+**Supported Models**
+
+* BERT
+* ALBERT
+* RoBERTa
+* XLM-RoBERTa
+
+Each model uses its corresponding pretrained checkpoint and task-specific dataset.
+
+**Usage**
+
+```text
+Open and run all cells in the notebook sequentially.
+```
+
+The pruning procedure is fully self-contained and does not rely on precomputed importance scores.
+
+**Results**
+
+The notebook produces the following output files:
+
+* `pruned_heads_accuracy(BERT)basedonGreedyGnorm.csv`
+* `pruned_heads_accuracy(ALBERT)basedonGreedyGnorm.csv`
+* `pruned_heads_accuracy(ROBERTA)basedonGreedyGnorm.csv`
+* `pruned_heads_accuracy(XLM_ROBERTA)basedonGreedyGnorm.csv`
+
+Each CSV file records downstream task accuracy as a function of the number of pruned attention heads under greedy gradient-norm–based pruning.
+
+
+
+
+
+
 #### `InverseGreedyGnormPruning.ipynb`
 
 **Purpose**
