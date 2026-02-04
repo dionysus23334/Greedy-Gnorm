@@ -326,6 +326,8 @@ This notebook **diagnoses and fixes numerical underflow and NaN issues** arising
 
 Each file stores a **numerically stabilized AE matrix** used for head-ranking and pruning analysis.
 
+> **Note:** `rectified` in the path denotes numerical stabilization of Attention Entropy using ε; one occurrence means ε is applied only to the log term, while two occurrences mean ε is applied to both the probability and log terms.
+
 
 
 ### Result Aggregation and Visualization
