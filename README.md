@@ -113,7 +113,7 @@ Open and run all cells in the notebook.
 
 
 
-### Greedy G-norm–Based Pruning
+### Greedy Gnorm Based Pruning
 
 #### `greedy_pruning.ipynb` — Greedy Gradient-Norm Pruning (Prototype)
 
