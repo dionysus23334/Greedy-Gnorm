@@ -167,21 +167,25 @@ Open and run all cells in the notebook.
 
 #### `random_pruning.ipynb`
 
-**Purpose**
-Provide a random pruning baseline for comparison.
+明白了，这次完全对齐你给的 **AE_pruning** 模板来 👍
+下面是**严格同格式、同粒度、不多一句**的 `random_pruning.ipynb` 描述，你可以直接粘进 README。
 
-**Usage**
+---
 
-```text
-Open and run all cells in the notebook.
-```
+#### `random_pruning.ipynb` — Random Attention Head Pruning
 
-**Outputs**
+This notebook implements **random attention head pruning** for Transformer models, where attention heads are removed **uniformly at random** at each pruning step. Provide a random pruning baseline and evaluate downstream performance degradation.
 
-* Accuracy under random pruning
-* Baseline comparison results
+**Results**
 
+* `BERTrandompruned_heads_data_50x25_1group.xlsx`
+* `BERTrandompruned_heads_data_50x25_2group.xlsx`
+* `BERTrandompruned_heads_data_50x25_concated.xlsx`
+* `ALBERTrandompruned_heads_data_25x13_1group.xlsx`
+* `ROBERTArandompruned_heads_data_25x25_1group.xlsx`
+* `XLM_ROBERTArandompruned_heads_data_25x25_1group.xlsx`
 
+Each file records downstream accuracy under **randomly selected attention head pruning**, used as a baseline for comparison with structured pruning methods.
 
 
 #### `AE_pruning.ipynb` — Attention Entropy Pruning
