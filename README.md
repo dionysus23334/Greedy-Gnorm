@@ -27,6 +27,10 @@ ArXiv preprint link: https://arxiv.org/abs/2602.04491
 &nbsp;&nbsp;↳ [Illustrative Figures](#illustrative-figures-manuscript-diagrams)  
 &nbsp;&nbsp;↳ [Experimental Result Visualizations](#experimental-result-visualizations)
 
+[Questions and Feedback](#questions-and-feedback)  
+
+[Citation](#citation)
+
 ---
 
 ## Getting Started
