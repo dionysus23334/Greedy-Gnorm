@@ -519,7 +519,7 @@ For more open-ended inquiries, we encourage starting a [discussion](https://gith
 ## Citation
 If you find anything useful please cite our work using:
 ```
-@article{Guo2024,
+@article{Guo2026,
   title={Greedy-Gnorm: A Gradient Matrix Norm-Based Alternative to Attention Entropy for Head Pruning},
   author={Guo, Yuxi and Sheridan, Paul},
   journal={arXiv preprint arXiv:2602.04491},
